@@ -1,0 +1,68 @@
+
+.absa-cards-wrapper > .absa-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for side-by-side alignment */
+  flex-direction: row; /* Ensure items are side by side */
+  justify-content: space-between; /* Space out the items */
+  gap: 20px; /* Adjust spacing between sections as needed */
+}
+
+.absa-cards-wrapper > .absa-cards > ul > li {
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  display: flex;
+  flex-direction: column;
+  width: 30%; /* Adjust width as needed */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.absa-cards-wrapper .absa-cards-card-image {
+  line-height: 0;
+  display: block; /* Ensure the image container is displayed */
+  width: 100%; /* Ensure the image container spans the full width */
+}
+
+.absa-cards-wrapper > .absa-cards > ul > li img {
+  width: 100%;
+  height: auto; /* Ensure images are displayed */
+  object-fit: cover;
+}
+
+.absa-cards-wrapper .absa-cards-card-body {
+  margin: 0; /* Remove margin */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0; /* Add padding for inner content */
+  flex: 1; /* Allow card body to take available space */
+}
+
+.absa-cards-wrapper .absa-cards-card-body h5 {
+  margin: 10px 0; /* Adjust margin to make spacing more compact */
+  font-weight: normal; /* Ensure the title is not too bold */
+}
+
+.absa-cards-wrapper .button-container {
+  margin-top: 5px; /* Adjust spacing */
+  display: flex;
+  flex-direction: row; /* Ensure button is aligned correctly */
+  align-items: center; /* Align items vertically */
+}
+
+.absa-cards-wrapper .button-container .button {
+  color: red; /* Match the original red color for call to action */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 12px; /* Adjust font size to be slightly smaller */
+  display: inline-flex; /* Display inline-flex for alignment */
+  align-items: center; /* Center align items */
+  background-color: transparent; /* Remove blue background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.absa-cards-wrapper .button-container .button:after {
+  content: ' ➔'; /* Add arrow icon */
+  margin-left: 5px; /* Add some space between text and arrow */
+}
