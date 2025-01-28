@@ -62,7 +62,7 @@
   white-space: nowrap; /* Prevent text wrapping */
 }
 
-.absa-cards-wrapper .button-container .button:after {
+.absa-cards-wrapper .button-container .button::after {
   content: ' ➔'; /* Add arrow icon */
   margin-left: 5px; /* Add some space between text and arrow */
 }
